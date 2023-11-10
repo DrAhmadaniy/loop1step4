@@ -1,0 +1,189 @@
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+*,*:before, *:after{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+body{
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #a9bed6;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.cf::before, .cf::after{
+  content: "";
+  display: table;
+}
+
+.cf::after{
+  clear: both;
+}
+
+
+.main{
+  width: 400px;
+  margin: 100px auto 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+.chat-title{
+  position: relative;
+   background-color: #618bd4;
+   color: #fffeff;
+   padding: 20px;
+}
+
+
+.chat-title-text{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+
+.chat-title-text:before{
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  background-color: #fff;
+  border-radius: 50%
+}
+
+.chat{
+  padding: 20px;
+}
+
+.chat hr{
+   border-top: 1px solid #d9d8da;
+}
+
+
+.chat-close-link{
+  top: 50%;
+  right: 15px;
+  opacity: .7;
+  transition: all .3s ease;
+  position: absolute;
+  margin-top: -12px;
+}
+
+.chat-close-link:hover{
+  opacity: 1;
+}
+.close-link-img{
+   vertical-align: middle;
+}
+
+.date-divider{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.date-divider-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  background-color: #fff;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: translate(-50%, -50%);
+}
+
+.message{
+  margin-bottom: 15px;
+}
+
+.message-time{
+  color: #9aa0a8;
+  margin-bottom: 5px;
+}
+
+.message-text{
+  position: relative;
+  display: inline-block;
+  max-width: 270px;
+  border-radius: 3px;
+  width: auto;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.message-sender .message-text {
+  background-color: #e4ebf6;
+}
+
+.message-sender .message-text:before{
+  left: -5px;
+  border-top: 5px solid #e6edfe;
+}
+
+.message-recipient .message-time{
+  text-align: right;
+}
+
+.message-text::before{
+  position: absolute;
+  display: block;
+  width: 0;
+  top: 0;
+  height: 0;
+  content: "";
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.message-recipient .message-text{
+  background-color: #f1eff1;
+  float: right;
+}
+
+.message-alert-danger .message-text{
+  background-color: #ffb9bb;
+  float: right;
+}
+
+.chat-compose-text{
+  border: none;
+  outline: 0;
+  width: 80%;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.chat-compose-button{
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  left: 1px;
+  color: #5f86c5;
+  width: 20%;
+}
+
+
+
+

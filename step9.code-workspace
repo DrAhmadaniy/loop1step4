@@ -1,0 +1,32 @@
+{
+  "folders": [
+	{
+		"path": "../step9"
+	},
+	{
+		"path": "../step1"
+	},
+	{
+		"path": "../step3"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../step5"
+	},
+	{
+		"path": "../Markup - 6 - Assets"
+	},
+	{
+		"path": "../step 7"
+	},
+	{
+		"path": "../step 8"
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "step9"
+  }
+}
